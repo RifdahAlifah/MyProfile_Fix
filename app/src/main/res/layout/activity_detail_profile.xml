@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_detail"
+    tools:context=".DetailProfile">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/paint_remove"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/tv_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_130dp"
+        android:fontFamily="@font/poller"
+        android:text="@string/personal_ninformation"
+        android:textColor="@color/navy_muda"
+        android:textSize="@dimen/_25sp" />
+
+    <TextView
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/_5dp"
+        android:layout_below="@id/tv_personal"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@color/transparent_navy" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_120dp"
+        android:layout_height="@dimen/_120dp"
+        android:layout_marginStart="@dimen/_270dp"
+        android:layout_marginTop="@dimen/_120dp"
+        android:src="@drawable/me_circle" />
+
+    <TableRow
+        android:id="@+id/tl_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_personal"
+        android:layout_marginTop="@dimen/_40dp">
+
+        <TextView
+            android:id="@+id/tv_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/full_name"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rifdah_alifah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_60dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/rifdah_alifah"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tl_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_one">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/nickname"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rifdah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_58dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/rifdah"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tl_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_two">
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/place"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_jakarta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_90dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/jakarta"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tl_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_three">
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/age"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_years_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_100dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/years_old"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tl_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_four">
+
+        <TextView
+            android:id="@+id/tv_height_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/height_weight"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/cm_kg"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tl_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_five">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/address"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_multikarya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_71dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/multikarya"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tl_seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_six">
+
+        <TextView
+            android:id="@+id/tv_hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/hobby"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_82dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/reading"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tl_eight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_seven">
+
+        <TextView
+            android:id="@+id/tv_future_goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/future_goals"
+            android:textColor="@color/navy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_programmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_42dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/programmer"
+            android:textColor="@color/navy" />
+    </TableRow>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/vector_segitiga"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/tv_motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_480dp"
+        android:fontFamily="@font/poller"
+        android:text="@string/motto"
+        android:textColor="@color/navy_muda"
+        android:textSize="@dimen/_25sp"
+        android:background="@color/navy_lightt"
+        android:paddingHorizontal="@dimen/_103dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/shape_motto"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/_100dp"
+        android:layout_below="@id/tv_motto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@color/navy_muda"/>
+
+    <TextView
+        android:id="@+id/isi_motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isi_motto"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@+id/tv_motto"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30dp"
+        android:textStyle="italic"/>
+    <ImageView
+        android:id="@+id/iv_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quotes_fix"
+        android:layout_below="@+id/isi_motto"
+        android:layout_marginStart="@dimen/_70dp"
+        android:contentDescription="@string/image" />
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_me"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10sp"
+        android:layout_below="@+id/iv_quote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40dp"/>
+
+
+
+</RelativeLayout>

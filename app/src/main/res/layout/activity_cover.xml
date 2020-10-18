@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:padding="@dimen/_60dp"
+    tools:context=".CoverActivity">
+
+    <TextView
+        android:id="@+id/layout_grey"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_80dp"
+        android:layout_marginTop="@dimen/_60dp"
+        android:background="@color/grey_light_1" />
+
+    <TextView
+        android:id="@+id/tv_my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sp"
+        android:fontFamily="@font/poller"
+        android:text="@string/my_profile"
+        android:textColor="@color/navy"
+        android:textSize="@dimen/_35sp" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_450dp"
+        android:layout_height="@dimen/_240dp"
+        android:layout_below="@id/tv_my_profile"
+        android:layout_marginStart="@dimen/_60dp"
+        android:layout_marginTop="@dimen/_5dp">
+
+        <ImageView
+            android:id="@+id/iv_hiasan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/me"
+            android:contentDescription="@string/image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iv_hiasan"
+        android:layout_width="@dimen/_450dp"
+        android:layout_height="@dimen/_240dp"
+        android:layout_below="@id/tv_my_profile"
+        android:layout_marginStart="@dimen/_60dp"
+        android:layout_marginTop="@dimen/_5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hiasan_frame"
+            android:contentDescription="@string/image1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pinggiran"
+        android:layout_width="@dimen/_8dp"
+        android:layout_height="@dimen/_400dp"
+        android:layout_marginTop="@dimen/_300dp"
+        android:background="@color/navy_muda" />
+
+    <TextView
+        android:id="@+id/tv_aloha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_hiasan"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_100dp"
+        android:fontFamily="@font/poller"
+        android:text="@string/aloha"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_25sp" />
+
+    <TextView
+        android:id="@+id/im_rifdah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_aloha"
+        android:layout_marginStart="@dimen/_30dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/intro"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sp" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/_28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="@string/get_started"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/navy_old"
+        android:textStyle="bold"
+        android:layout_below="@id/im_rifdah"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_rifdah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/intro_space"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10sp" />
+
+
+</RelativeLayout>

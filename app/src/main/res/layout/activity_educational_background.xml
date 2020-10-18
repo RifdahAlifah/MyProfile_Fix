@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".EducationalBackground">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector3"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/image" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector4"
+        android:contentDescription="@string/image" />
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="@dimen/_250dp"
+        android:layout_height="400dp"
+        android:src="@drawable/book"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_100dp"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/tv_educational"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_390dp"
+        android:fontFamily="@font/poller"
+        android:text="@string/tv_educational"
+        android:textColor="@color/navy"
+        android:textSize="@dimen/_30sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/tv_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_background"
+        android:textSize="@dimen/_25sp"
+        android:fontFamily="@font/poller"
+        android:textColor="@color/navy"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_below="@+id/tv_educational"/>
+    <ImageView
+        android:id="@+id/iv_paint"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crop_paint"
+        android:layout_marginTop="@dimen/_98dp"
+        android:contentDescription="@string/image" />
+    <TextView
+        android:id="@+id/tv_2006"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2006_2012"
+        android:layout_below="@id/tv_background"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_16sp" />
+    <TextView
+        android:id="@+id/tv_sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sd"
+        android:layout_below="@id/tv_2006"
+        android:layout_marginStart="@dimen/_30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_14sp"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_5dp"
+        app:drawableStartCompat="@drawable/ic_ellips" />
+    <TextView
+        android:id="@+id/tv_2013"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_2013"
+        android:layout_below="@id/tv_sd"
+        android:layout_marginStart="@dimen/_30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_16sp"/>
+    <TextView
+        android:id="@+id/tv_smp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_smp"
+        android:layout_below="@id/tv_2013"
+        android:layout_marginStart="@dimen/_30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_14sp"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_5dp"
+        app:drawableStartCompat="@drawable/ic_ellips" />
+    <TextView
+        android:id="@+id/tv_2017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_2017"
+        android:layout_below="@id/tv_smp"
+        android:layout_marginStart="@dimen/_30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_16sp"/>
+    <TextView
+        android:id="@+id/tv_sma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sma"
+        android:layout_below="@id/tv_2017"
+        android:layout_marginStart="@dimen/_30dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_14sp"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_5dp"
+        app:drawableStartCompat="@drawable/ic_ellips" />
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_d_u_c_a_t_i_o_n_a_l"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_10sp"
+        android:layout_below="@+id/tv_sma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40dp"/>
+
+</RelativeLayout>

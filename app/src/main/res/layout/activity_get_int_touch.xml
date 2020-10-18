@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_getintouch"
+    tools:context=".GetIntTouch">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_200dp"
+        android:contentDescription="@string/image" />
+    <TextView
+        android:id="@+id/tv_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_150dp"
+        android:fontFamily="@font/poller"
+        android:text="@string/get_in_touch"
+        android:textColor="@color/navy"
+        android:textSize="@dimen/_30sp"
+        tools:ignore="RelativeOverlap" />
+    <TextView
+        android:layout_width="@dimen/_305dp"
+        android:layout_height="@dimen/_165dp"
+        android:background="@color/navy_muda"
+        android:layout_below="@+id/tv_get"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40dp"/>
+
+    <TextView
+        android:id="@+id/tv_instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_90dp"
+        android:layout_below="@id/tv_get"
+        android:fontFamily="@font/poller"
+        android:text="@string/text_instagram"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_50dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tv_name_rifdah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_get"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_55dp"
+        android:layout_toEndOf="@id/tv_instagram"
+        android:fontFamily="@font/poppins"
+        android:text="@string/uname_ig"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_dribbble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_90dp"
+        android:layout_below="@id/tv_instagram"
+        android:fontFamily="@font/poller"
+        android:text="@string/text_dribbble"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_5dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tv_id_dribble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_rifdah"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_toEndOf="@id/tv_dribbble"
+        android:layout_marginStart="@dimen/_8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/uname_rifdahalf"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/tv_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_90dp"
+        android:layout_below="@id/tv_dribbble"
+        android:fontFamily="@font/poller"
+        android:text="@string/text_medium"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_5dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tv_github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_90dp"
+        android:layout_below="@id/tv_medium"
+        android:fontFamily="@font/poller"
+        android:text="@string/text_github"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_5dp"
+        android:textSize="@dimen/_20sp" />
+    <TextView
+        android:id="@+id/tv_id_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_id_dribble"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_toEndOf="@id/tv_medium"
+        android:fontFamily="@font/poppins"
+        android:text="@string/uname_rifdahalf"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="@dimen/_5dp"/>
+    <TextView
+        android:id="@+id/tv_id_github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_medium"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_toEndOf="@id/tv_github"
+        android:fontFamily="@font/poppins"
+        android:text="@string/text_rifdahalifah"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="@dimen/_5dp"/>
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_90dp"
+        android:layout_below="@id/tv_github"
+        android:fontFamily="@font/poller"
+        android:text="@string/text_email"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_5dp"
+        android:textSize="@dimen/_20sp" />
+    <TextView
+        android:id="@+id/tv_name_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_id_github"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_toEndOf="@id/tv_email"
+        android:fontFamily="@font/poppins"
+        android:text="@string/email_rifdah"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="@dimen/_5dp"/>
+
+</RelativeLayout>

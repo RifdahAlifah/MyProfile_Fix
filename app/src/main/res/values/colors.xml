@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="navy">#0E2332</color>
+    <color name="navy_muda">#2B4F6A</color>
+    <color name="grey_light">#DAD3CC</color>
+    <color name="transparent_navy">#728EA5</color>
+    <color name="navy_lightt">#EAE6E2</color>
+    <color name="grey_light_1">#CFCDCD</color>
+    <color name="navy_old">#01030E</color>
+</resources>
